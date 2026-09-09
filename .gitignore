@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+secrets.env
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.tar.gz.enc
+.idea/
+.vscode/
