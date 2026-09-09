@@ -1,0 +1,19 @@
+{
+  "roots": ["~/Desktop/JARVIS_WORKSPACE"],
+  "ignored_directories": [
+    ".git", ".venv", "venv", "node_modules", "dist", "build", "__pycache__"
+  ],
+  "max_context_files": 120,
+  "max_tool_output_chars": 20000,
+  "allowed_commands": [
+    ["python", "-m", "pytest"],
+    ["python3", "-m", "pytest"],
+    ["pytest"],
+    ["npm", "test"],
+    ["npm", "run", "test"],
+    ["npm", "run", "lint"],
+    ["ruff", "check", "."],
+    ["git", "diff"],
+    ["git", "status", "--short"]
+  ]
+}

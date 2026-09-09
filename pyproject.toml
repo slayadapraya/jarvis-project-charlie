@@ -1,0 +1,23 @@
+[project]
+name = "jarvis-local-assistant"
+version = "2.4.0"
+description = "A private, repository-aware local AI assistant for LM Studio on Ubuntu"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "uvicorn[standard]>=0.30,<1",
+  "psutil>=6,<8",
+  "pydantic>=2.8,<3",
+  "piper-tts>=1.3,<2",
+  "python-multipart>=0.0.18,<1",
+  "faster-whisper>=1.1,<2"
+]
+
+[tool.setuptools]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

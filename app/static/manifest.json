@@ -1,0 +1,8 @@
+{
+  "name": "JARVIS Local Assistant",
+  "short_name": "JARVIS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#03070d",
+  "theme_color": "#00d9ff"
+}

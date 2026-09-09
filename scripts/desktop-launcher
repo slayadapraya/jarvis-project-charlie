@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+launch_command='"$HOME/.local/share/jarvis/app/scripts/start.sh"; exec bash'
+if command -v ptyxis >/dev/null 2>&1; then
+  exec ptyxis --new-window -- bash -lc "$launch_command"
+elif command -v kgx >/dev/null 2>&1; then
+  exec kgx -- bash -lc "$launch_command"
+elif command -v gnome-terminal >/dev/null 2>&1; then
+  exec gnome-terminal -- bash -lc "$launch_command"
+else
+  exec x-terminal-emulator -e bash -lc "$launch_command"
+fi

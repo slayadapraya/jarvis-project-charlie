@@ -1,0 +1,43 @@
+{
+  "default_model": "qwen2.5-coder-14b-instruct",
+  "context_length": 32768,
+  "models": [
+    {
+      "id": "qwen2.5-coder-14b-instruct",
+      "label": "Qwen 2.5 Coder 14B (installed)",
+      "profile": "coding",
+      "tools": true,
+      "temperature": 0.2
+    },
+    {
+      "id": "dolphin3.0-llama3.1-8b",
+      "label": "Dolphin 3.0 Llama 3.1 8B (fun/story)",
+      "profile": "creative",
+      "tools": false,
+      "temperature": 0.8
+    },
+    {
+      "id": "qwen2.5-vl-7b-instruct",
+      "label": "Qwen 2.5 VL 7B (installed vision)",
+      "profile": "vision",
+      "tools": false,
+      "temperature": 0.2
+    },
+    {
+      "id": "qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen 3 Coder 30B A3B (recommended)",
+      "profile": "coding",
+      "tools": true,
+      "temperature": 0.3,
+      "optional": true
+    },
+    {
+      "id": "gemma-4-12b-qat",
+      "label": "Gemma 4 12B QAT (recommended general/vision)",
+      "profile": "general",
+      "tools": true,
+      "temperature": 0.5,
+      "optional": true
+    }
+  ]
+}
