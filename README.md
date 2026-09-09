@@ -96,16 +96,16 @@ The script hides credential input and writes the local secrets file with mode `6
 This repository contains no copied credentials, user databases, uploaded files, or encrypted personal backups. Each installation creates its secrets and state locally.
 
 ```bash
-git clone git@github.com:slayadapraya/jarvis.git
-cd jarvis
+git clone git@github.com:slayadapraya/jarvis-project-charlie.git
+cd jarvis-project-charlie
 ./install.sh
 ~/Desktop/JARVIS
 ```
 
-Because the repository is private, each friend must first be granted repository access and authenticate their Ubuntu system with GitHub. HTTPS cloning also works:
+The repository is public, so no GitHub account is required for HTTPS cloning. SSH cloning requires an SSH key configured with GitHub. HTTPS cloning also works:
 
 ```bash
-git clone https://github.com/slayadapraya/jarvis.git
+git clone https://github.com/slayadapraya/jarvis-project-charlie.git
 ```
 
 ## Folder layout
