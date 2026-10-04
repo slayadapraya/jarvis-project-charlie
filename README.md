@@ -2,6 +2,12 @@
 
 This package replaces the fragile single-file JARVIS runtime with an authenticated, repository-aware local agent. It keeps the existing Qwen, Dolphin, and Qwen-VL entries and adds optional recommendations without downloading or deleting any model.
 
+Currently still a big work in progress.
+
+Essentially just a wrapper for local LLM models for linux with system monitoring etc. 
+
+Developed with the help of Codex.
+
 ## What changes
 
 - Chat history and the active repository are stored server-side in SQLite.
